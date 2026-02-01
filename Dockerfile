@@ -26,5 +26,3 @@ RUN comfy --skip-prompt model download \
     --url https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors \
     --relative-path models/vae/Wan \
     --filename wan_2.1_vae.safetensors
-
-COPY input/ /comfyui/input/
