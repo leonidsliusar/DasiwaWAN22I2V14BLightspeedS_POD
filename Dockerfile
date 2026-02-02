@@ -6,7 +6,8 @@ RUN comfy-node-install \
     comfyui-kjnodes \
     comfyui-custom-scripts \
     comfyui-easy-use \
-    comfyui-wan
+    comfyui-frame-interpolation \
+    whiterabbit
 
 RUN comfy --skip-prompt model download \
     --url https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors \
