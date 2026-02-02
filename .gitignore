@@ -2,7 +2,14 @@
 venv
 .env
 data
-models
 simulated_uploaded
 __pycache__
 .idea
+models/
+input/
+output/
+usage.py
+*.png
+*.jpg
+*.webm
+*.mp4
