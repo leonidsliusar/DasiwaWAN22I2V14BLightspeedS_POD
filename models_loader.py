@@ -14,18 +14,37 @@ s3 = boto3.client(
 
 bucket = os.getenv("S3_BUCKET")
 
-files = [
-    (
-        "models/DasiwaWAN22I2V14BLightspeed_synthseductionHighV9.safetensors",
-        "models/diffusion_models/DasiwaWAN22I2V14BLightspeed_synthseductionHighV9.safetensors"
-    ),
-    (
-        "models/DasiwaWAN22I2V14BLightspeed_synthseductionLowV9.safetensors",
-        "models/diffusion_models/DasiwaWAN22I2V14BLightspeed_synthseductionLowV9.safetensors"
-    ),
-]
+# Examples:
+# files = [
+#     (
+#         "models/DasiwaWAN22I2V14BLightspeed_synthseductionHighV9.safetensors",
+#         "models/unet/DasiwaWAN22I2V14BLightspeed_synthseductionHighV9.safetensors"
+#     ),
+#     (
+#         "models/DasiwaWAN22I2V14BLightspeed_synthseductionLowV9.safetensors",
+#         "models/unet/DasiwaWAN22I2V14BLightspeed_synthseductionLowV9.safetensors"
+#     ),
+# ]
 
-for local_path, s3_key in files:
-    print(f"Uploading {local_path}...")
-    s3.upload_file(local_path, bucket, s3_key)
-    print(f"Done: {s3_key}")
+# for local_path, s3_key in files:
+#     print(f"Uploading {local_path}...")
+#     s3.upload_file(local_path, bucket, s3_key)
+#     print(f"Done: {s3_key}")
+
+
+# prefix = "/"
+#
+# response = s3.list_objects_v2(
+#     Bucket=bucket,
+#     Prefix=prefix,
+#     Delimiter="/"
+# )
+#
+# print("Папки:")
+# for cp in response.get("CommonPrefixes", []):
+#     print(cp["Prefix"])
+#
+# print("\nФайлы:")
+# for obj in response.get("Contents", []):
+#     print(obj["Key"])
+

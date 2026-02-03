@@ -398,7 +398,7 @@
   },
   "911:1149": {
     "inputs": {
-      "unet_name": "DasiwaWAN22I2V14B_synthseductionHighV9.safetensors",
+      "unet_name": "DasiwaWAN22I2V14BLightspeed_synthseductionHighV9.safetensors",
       "weight_dtype": "default"
     },
     "class_type": "UNETLoader",
@@ -597,7 +597,7 @@
   },
   "911:1153": {
     "inputs": {
-      "unet_name": "DasiwaWAN22I2V14B_synthseductionLowV9.safetensors",
+      "unet_name": "DasiwaWAN22I2V14BLightspeed_synthseductionLowV9.safetensors",
       "weight_dtype": "default"
     },
     "class_type": "UNETLoader",
